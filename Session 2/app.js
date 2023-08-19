@@ -1,37 +1,68 @@
 import React from "react";
-import ReactDOM  from "react-dom/client";
+import ReactDOM from "react-dom/client";
 
+//* React Element
 
 /**
- * Nested 
- */
+ * jsx is not html in js , its html or xml  like syntax
+ * jsx transpiled before it reaches js engine
+ * transpiled done using parcel which give it to babel
+ *  ? jsx => babel transpile it to React.createElement => ReactElement-js object => HTMLElement(render)
+ * */
 
-// const heading = React.createElement(
-//     "h1",
-//     {id : "parent"},
-//     React.createElement(
-//         "h1",
-//         {id : "child"},
-//         React.createElement(
-//             "h2",
-//             {},
-//             "I am h2 tag"
-//         )
-//     )
+// const jsxHeading = (
+//   <h1 id="heading" className="head">
+//     Hello from react
+//   </h1>
 // );
 
-//** using array of children */
+//other way to write jsx
+// const temp = (
+//   <h1 id="heading" className="head">
+//     Hello from react
+//   </h1>
+// );
 
-const content = React.createElement(
-    "div",
-    {},
-    [React.createElement("h1",{},"I am React"),React.createElement("h2",{},"I am h2 tag")]
-)
+//console.log(jsxHeading);
 
+//* React Compoenet
 
-console.log(content);//returns an object
+/**
+ *  class Based Component = OLD
+ *  Functional Based component = NEW
+ *  */
 
-const root =  ReactDOM.createRoot(document.getElementById("root"));//converts the js obj/react element to html tag 
+//React function compoent
 
+const HeadingCompoenent = () => {
+  return <h1>Namste react Funtional Heading compoenent</h1>;
+};
 
-root.render(content);
+//Diffrent way of writting react function compoenent
+const HeadingComponent2 = () => (
+  <div class="container">
+    //!below is the example of (COMPOENET COMPOSTION)
+    <HeadingCompoenent /> //*this way we can use the the function component in
+    other fucntion
+    <h1>Namste react Funtional compoenent</h1>
+  </div>
+);
+
+const pi = 3.14;
+
+//Heading componenent is an example of componenet compostion
+const HeadingComponent3 = () => (
+  <div class="container">
+    {pi}
+
+    <HeadingCompoenent />
+    <HeadingCompoenent />
+    {HeadingCompoenent()}
+    <HeadingCompoenent></HeadingCompoenent>
+
+    <h1>Namste react Funtional compoenent</h1>
+  </div>
+);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<HeadingComponent3 />);

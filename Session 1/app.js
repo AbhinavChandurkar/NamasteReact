@@ -1,5 +1,5 @@
 /**
- * Nested 
+ * Nested
  */
 
 // const heading = React.createElement(
@@ -18,16 +18,13 @@
 
 //** using array of children */
 
-const content = React.createElement(
-    "div",
-    {},
-    [React.createElement("h1",{},"I am h1 tag"),React.createElement("h2",{},"I am h2 tag")]
-)
+const content = React.createElement("div", {}, [
+  React.createElement("h1", {}, "I am h1 tag"),
+  React.createElement("h2", {}, "I am h2 tag"),
+]);
 
+console.log(content); //returns an object
 
-console.log(content);//returns an object
-
-const root =  ReactDOM.createRoot(document.getElementById("root"));//converts the js obj/react element to html tag 
-
+const root = ReactDOM.createRoot(document.getElementById("root")); //converts the js obj/react element to html tag
 
 root.render(content);
