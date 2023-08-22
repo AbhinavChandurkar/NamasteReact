@@ -37,19 +37,9 @@
   border: 1px solid black;
 }
 
-.search {
-  margin-left: 30px;
-  padding: 5px;
-  width: 10%;
-  height: 30px;
-  border: 1px solid #8d3d5b;
-  color: #8d3d5b;
-  font-size: xx-large;
-}
-
-.search-icon {
-  width: 30px;
-  height: 30px;
+.filter {
+  margin: 30px;
+  cursor: pointer;
 }
 
 .res-logo {
