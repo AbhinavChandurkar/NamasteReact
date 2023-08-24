@@ -17,7 +17,6 @@ In this repository, you will find folders for each session of the course. I'll b
 
 - Alongside the notes, I'll save the code examples and projects we work on during the session. This will help me keep track of my progress and refer back to the code whenever needed.
 
-
 Each session folder will contain session-specific notes and code examples.
 
 ## Cloning Instructions
@@ -29,11 +28,13 @@ To clone this repository and access the course materials:
 2. On your forked repository, click the green **Code** button, then copy the repository URL.
 
 3. Open your terminal or command prompt, navigate to the directory where you want to clone the repository, and use the following command:
+
 ```bash
   git clone https://github.com/AbhinavChandurkar/NamasteReact.git
 ```
 
 4. Once the cloning is complete, navigate into the cloned directory:
+
 ```bash
   cd Namaste-React-Course
 ```
@@ -43,10 +44,10 @@ To clone this repository and access the course materials:
 - **Name:** Abhinav Chandurkar
 - **Age:** 21
 - **Course:** Namaste React by Akshay Saini
-  
-## 🛠 Skills
-Javascript, HTML, CSS
 
+## 🛠 Skills
+
+Javascript, HTML, CSS
 
 Now you have a local copy of the repository with all the course materials. Happy learning!
 
